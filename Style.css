@@ -1,0 +1,145 @@
+/* Ids for NavBar 
+*/
+
+@media (min-width: 801px) {
+    #nav-background {
+        color: #e7efecce;
+        background: rgb(33, 143, 125);
+    }
+
+    .right-header {
+        margin-left: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    #nav-background {
+        color: #e7efecce;
+        background: #e7efecce;;
+    }
+    .rectangle {
+        padding: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        background: rgb(33, 143, 125);
+        border-radius: 3px;
+    }
+
+    .white-border{
+        border: 2px solid white;
+    }
+    navbar-light
+}
+
+body {
+    padding: 10;
+    margin: 10;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgb(33, 143, 125);
+    background: #f3f7f5ce;
+  }
+
+
+
+/* Style for Main Parts
+*/
+
+.whitebox {
+    margin: 25px;
+    padding: 20px;
+    background-color: white;
+}
+
+header h2 {
+        color: rgb(33, 143, 125);
+        text-align: center;
+    }
+
+header h3 {
+    color: rgb(33, 143, 125);
+    text-align: center;
+}
+
+header h4 {
+    color: rgb(33, 143, 125);
+    text-align: center;
+}
+
+.image {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.left-align {
+    width: 50%;
+    float: left;
+    background: e7efecce;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* Style for Visualization Links
+*/
+
+@media (min-width: 601px) {
+    .viz-links {
+        position: relative;
+        margin: 25px;
+        padding: 5px;
+        height: 450px;
+        width: 500px;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .viz-links {
+        position: absolute;
+        margin: 25px;
+        padding: 5px;
+        height: 450px;
+        width: 500px;
+    }
+}
+
+.viz-links-1 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 216px;
+    height: 144px;
+}
+
+.viz-links-2 {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 216px;
+    height: 144px;
+}
+
+.viz-links-3 {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 216px;
+    height: 144px;
+}
+
+.viz-links-4 {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 216px;
+    height: 144px;
+}
