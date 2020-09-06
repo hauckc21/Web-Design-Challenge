@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cloudiness</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Style.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav-background">
+      <a class="navbar-brand rectangle" href="../index.html">Weather Data</a>
+      <button class="navbar-toggler rectangle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto right-header">
+          <li class="nav-item dropdown rectangle white-border">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Max_Temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="Humidity.html">Humidity</a>
+              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item rectangle white-border">
+            <a class="nav-link" href="Comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item rectangle white-border">
+            <a class="nav-link" href="Data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Rows of Content-->
+    <div>
+      <div class="container px-md-15">
+        <div class="row mx-md-15">
+          <div class="col px-md-10 py-3">
+            <article class="whitebox">
+                <header>
+                  <h2>Cloudiness</h2>
+                </header>
+                <hr>
+                <img src="../Assets/Images/Cloudiness.png" alt="Latitude_vs_Cloudiness" class="image">
+                <p>There was no noticeable correlation between cloudiness and proximity to the Equator. The scatter plots for both the Northern and Southern Hemispheres show similar distributions of cloud cover across the spectrum of latitudes. </p>
+                <p>One feature of the general data set that is observable in the cloudiness plot, however, is the relatively small number of points in the Southern Hemisphere. This is due to the API’s collection of weather data based on the geo-coordinates of cities. As much of the Southern Hemisphere is covered by ocean, there are fewer cities in habitable climates and therefore fewer data points collected for the Southern Hemisphere than for the Northern Hemisphere.</p>          </div>
+          <div class="col px-md-3 py-3">
+            <article>
+              <div class="viz-links whitebox">
+                <header>
+                  <h2>Visualizations</h2>
+                </header>
+                <hr>
+                <a href="Max_Temp.html">
+                  <img target="_blank" src="../Assets/Images/Max_Temp.png" alt="Tempurature Map" class="viz-links-1">
+                </a>
+                <a href="Humidity.html">
+                  <img target="_blank" src="../Assets/Images/Humidity.png" alt="Humidity Map" class="viz-links-2">
+                </a>
+                <a href="Cloudiness.html">
+                  <img target="_blank" src="../Assets/Images/Cloudiness.png" alt="Cloud Map" class="viz-links-3">
+                </a>
+                <a href="Wind_Speed.html">
+                  <img target="_blank" src="../Assets/Images/Wind_Speed.png" alt="Wind Map" class="viz-links-4">
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
