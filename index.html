@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav-background">
+      <a class="navbar-brand rectangle" href="index.html">Weather Data</a>
+      <button class="navbar-toggler rectangle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto right-header">
+          <li class="nav-item dropdown rectangle white-border">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Visualizations/Max_Temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="Visualizations/Humidity.html">Humidity</a>
+              <a class="dropdown-item" href="Visualizations/Cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="Visualizations/Wind_Speed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item rectangle white-border">
+            <a class="nav-link" href="Visualizations/Comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item rectangle white-border">
+            <a class="nav-link" href="Visualizations/Data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!--Rows of Content-->
+  <div>
+    <div class="container px-md-15">
+      <div class="row mx-md-15">
+        <div class="col px-md-10 py-3">
+          <article class="whitebox">
+              <header>
+                <h2>Weather Data</h2>
+              </header>
+              <hr>
+              <img src="Assets/Images/Max_Temp.png" alt="Summary: Latitude vs X" class="image">
+              <p>The purpose of this study was to examine how proximity to the Equator impacts temperature. To answer this question, we performed a series of API calls to pull weather data from OpenWeatherMap.org for over 500 cities around the world. The data collected focused on max temperature, humidity, cloudiness, and wind speed for each city and also collected each city’s geo-coordinates.  We then analyzed the data in Pandas and graphed each city’s weather against their respective latitudes using scatter plots in Matplotlib.</p>
+              <p>Click on one of the visualizations in the menu for a deeper analysis of the data.</p>
+          </article>
+        </div>
+        <div class="col px-md-3 py-3">
+          <article>
+            <div class="viz-links whitebox">
+              <header>
+                <h2>Visualizations</h2>
+              </header>
+              <hr>
+              <a href="Visualizations/Max_Temp.html">
+                <img target="_blank" src="Assets/Images/Max_Temp.png" alt="Tempurature Map" class="viz-links-1">
+              </a>
+              <a href="Visualizations/Humidity.html">
+                <img target="_blank" src="Assets/Images/Humidity.png" alt="Humidity Map" class="viz-links-2">
+              </a>
+              <a href="Visualizations/Cloudiness.html">
+                <img target="_blank" src="Assets/Images/Cloudiness.png" alt="Cloud Map" class="viz-links-3">
+              </a>
+              <a href="Visualizations/Wind_Speed.html">
+                <img target="_blank" src="Assets/Images/Wind_Speed.png" alt="Wind Map" class="viz-links-4">
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
